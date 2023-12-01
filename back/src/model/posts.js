@@ -4,6 +4,10 @@ const schema = new Schema({
         type: String,
         default:''
     },
+    tags:{
+      type: String,
+      default:''
+    },
     description:{
         type: String,
         default:''
@@ -19,6 +23,10 @@ const schema = new Schema({
     category:{
         type: ObjectId,
         ref: 'category'
+    },
+    miniContent:{
+        type: String,
+        default:''
     }
 })
 module.exports = model('Post',schema)
